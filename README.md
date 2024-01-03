@@ -7,7 +7,8 @@ http://localhost:8087/external/services/ws/sample-service
 
 ### wsdl file
 ```
-http://localhost:8087/external/services/ws/sample-service/sample-service.wsdl
+http://localhost:8087/external/services/ws/sample-service/request-service.wsdl
+http://localhost:8087/external/services/ws/sample-service/response-service.wsdl
 ```
 
 ### SOAP request
@@ -30,9 +31,10 @@ http://localhost:8087/external/services/ws/sample-service/sample-service.wsdl
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
-        <ns2:sampleservicers xmlns:ns2="http://www.oracle.com/external/services/sampleservice/request/v1.0">
+        <ns2:sampleservicers xmlns:ns2="http://www.oracle.com/external/services/sampleservice/response/v1.0">
             <ns2:error_code>0000</ns2:error_code>
             <ns2:error_msg>Success</ns2:error_msg>
+            <ns2:trx_id>1234567890</ns2:trx_id>
         </ns2:sampleservicers>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -43,9 +45,10 @@ http://localhost:8087/external/services/ws/sample-service/sample-service.wsdl
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
-        <ns2:sampleservicers xmlns:ns2="http://www.oracle.com/external/services/sampleservice/request/v1.0">
+        <ns2:sampleservicers xmlns:ns2="http://www.oracle.com/external/services/sampleservice/response/v1.0">
             <ns2:error_code>400</ns2:error_code>
             <ns2:error_msg>Duplicate Service Id</ns2:error_msg>
+            <ns2:trx_id>1234567890</ns2:trx_id>
         </ns2:sampleservicers>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
