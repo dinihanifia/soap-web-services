@@ -1,4 +1,4 @@
-package com.test.soapwebservices.POJO.ReqRes;
+package com.test.soapwebservices.POJO.Json;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

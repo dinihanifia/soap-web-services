@@ -1,12 +1,8 @@
 package com.test.soapwebservices.Service;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.test.soapwebservices.POJO.Model.Services;
-import com.test.soapwebservices.POJO.ReqRes.SampleServiceRsJSON;
-import com.test.soapwebservices.POJO.ReqRes.Sampleservicerq;
-import com.test.soapwebservices.POJO.ReqRes.Sampleservicers;
+import com.test.soapwebservices.POJO.Request.Sampleservicerq;
+import com.test.soapwebservices.POJO.Response.Sampleservicers;
 import com.test.soapwebservices.Repository.ServiceRepository;
-import org.json.JSONObject;
-import org.json.XML;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -28,7 +24,7 @@ public class SoapWebEndpoint {
     public Sampleservicers save(@RequestPayload Sampleservicerq request){
         Sampleservicers response = new Sampleservicers();
         var check = webService.getOne(request.getServiceId());
-        if(check.equals("404")){
+        if(check.equals("0000")){
             Services services = new Services();
             services.setServiceId(request.getServiceId());
             services.setOrderType(request.getOrderType());

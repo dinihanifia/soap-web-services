@@ -56,35 +56,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20230227</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.15.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.cxf</groupId>
-			<artifactId>cxf-rt-frontend-jaxws</artifactId>
-			<version>3.4.5</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.cxf</groupId>
-			<artifactId>cxf-rt-transports-http</artifactId>
-			<version>3.4.5</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jsonx</groupId>
-			<artifactId>jsonx-maven-plugin</artifactId>
-			<version>0.4.0</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.dataformat</groupId>-->
+<!--			<artifactId>jackson-dataformat-xml</artifactId>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.json</groupId>-->
+<!--			<artifactId>json</artifactId>-->
+<!--			<version>20230227</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
+<!--			<artifactId>jackson-databind</artifactId>-->
+<!--			<version>2.15.2</version>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<build>
@@ -107,7 +92,7 @@
 				</executions>
 				<configuration>
 <!--					<sources>-->
-<!--						<source>${project.basedir}/src/main/resources/Main.xsd</source>-->
+<!--						<source>${project.basedir}/src/main/resources/Request.xsd</source>-->
 <!--&lt;!&ndash;						<source>${project.basedir}/src/main/resources/DetailsRequest.xsd</source>&ndash;&gt;-->
 <!--&lt;!&ndash;						<source>${project.basedir}/src/main/resources/DetailsResponse.xsd</source>&ndash;&gt;-->
 <!--					</sources>-->

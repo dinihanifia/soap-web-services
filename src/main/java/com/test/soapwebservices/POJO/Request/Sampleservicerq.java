@@ -1,4 +1,4 @@
-package com.test.soapwebservices.POJO.ReqRes;
+package com.test.soapwebservices.POJO.Request;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "serviceId",
@@ -18,8 +19,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "sampleservicerq")
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Builder
+@Data
 public class Sampleservicerq {
 
     @XmlElement(name = "service_id", required = true)

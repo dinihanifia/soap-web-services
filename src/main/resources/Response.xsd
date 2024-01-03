@@ -1,0 +1,13 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.oracle.com/external/services/sampleservice/response/v1.0"
+           elementFormDefault="qualified">
+    <xs:element name="sampleservicers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="error_code" type="xs:string"/>
+                <xs:element name="error_msg" type="xs:string"/>
+                <xs:element name="trx_id" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

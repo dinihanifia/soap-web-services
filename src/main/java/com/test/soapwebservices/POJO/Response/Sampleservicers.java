@@ -1,4 +1,4 @@
-package com.test.soapwebservices.POJO.ReqRes;
+package com.test.soapwebservices.POJO.Response;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,11 +16,12 @@ import javax.xml.bind.annotation.XmlType;
     "trxId"
 })
 @XmlRootElement(name = "sampleservicers")
-@Builder
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
+@Data
 public class Sampleservicers {
+
     @XmlElement(name = "error_code", required = true)
     protected String errorCode;
     @XmlElement(name = "error_msg", required = true)

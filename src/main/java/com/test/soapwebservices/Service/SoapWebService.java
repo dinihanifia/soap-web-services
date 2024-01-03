@@ -1,8 +1,8 @@
 package com.test.soapwebservices.Service;
 import com.test.soapwebservices.POJO.Model.Services;
+import com.test.soapwebservices.POJO.Request.Sampleservicerq;
+import com.test.soapwebservices.POJO.Response.Sampleservicers;
 import com.test.soapwebservices.Repository.ServiceRepository;
-import com.test.soapwebservices.POJO.ReqRes.Sampleservicerq;
-import com.test.soapwebservices.POJO.ReqRes.Sampleservicers;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -23,7 +23,7 @@ public class SoapWebService {
         try {
             // cek service id if duplicate
             var check = getOne(request.getServiceId());
-            if(check.equals("404")){
+            if(check.equals("0000")){
                 Services services = new Services();
                 services.setServiceId(request.getServiceId());
                 services.setOrderType(request.getOrderType());

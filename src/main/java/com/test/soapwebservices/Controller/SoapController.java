@@ -1,6 +1,6 @@
 package com.test.soapwebservices.Controller;
-import com.test.soapwebservices.POJO.ReqRes.Sampleservicerq;
-import com.test.soapwebservices.POJO.ReqRes.Sampleservicers;
+import com.test.soapwebservices.POJO.Request.Sampleservicerq;
+import com.test.soapwebservices.POJO.Response.Sampleservicers;
 import com.test.soapwebservices.Service.SoapWebService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
